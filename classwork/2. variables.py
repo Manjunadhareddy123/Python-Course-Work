@@ -1,4 +1,4 @@
-# Variable Rules and Assignment
+# 2 Variable Rules and Assignment
 myvar=10 # valid var
 myvar # 10
 Myvar=20 # valid var
