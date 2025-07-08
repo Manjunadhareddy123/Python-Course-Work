@@ -186,8 +186,7 @@ print(a is c) # False
 print( c is d) # False
 
 # Not in
-print(a,b,c,d,e) #
-[1, 2, 3, 4, 5] [1, 2, 3, 4, 5] [6, 7, 8, 9, 10] [3, 4, 5, 6, 7] [1, 2, 3, 4, 5]
+print(a,b,c,d,e) #[1, 2, 3, 4, 5] [1, 2, 3, 4, 5] [6, 7, 8, 9, 10] [3, 4, 5, 6, 7] [1, 2, 3, 4, 5]
 print(a is not b) # True
 print(a is not e) # False
 print("7" is not a) # True
