@@ -49,7 +49,8 @@ print(type(item_3)) # <class 'map'>
 l3=input("Enter student names (space-separated) : ").split()
 # Enter student names (space-separated) : manju nadha reddy
 print("students names : ",l3) # students names :  ['manju', 'nadha', 'reddy']
-print(type(l3)) #  <class 'list'>
+print(type(l3)) # 
+<class 'list'>
 
 # Input as List (Comma-separated)
 l4=input("Enter emp names (Comma-separated) : ").split(',')
@@ -90,9 +91,11 @@ print(type(m6))# <class 'dict'>
 #  Multiple Inputs with Unpacking -->Use case: Login form or payment details.
 
 a,b=input("Enter  the two values : ").split()
-# Enter  the two values : 4 5.6
-print("a value : ",a) # a value :  4
-print("b value : ",b) # b value :  5.6
+Enter  the two values : 4 5.6
+print("a value : ",a)
+a value :  4
+print("b value : ",b)
+b value :  5.6
 
 
 
