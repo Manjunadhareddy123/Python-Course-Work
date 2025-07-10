@@ -43,10 +43,14 @@ print(type(10)) # <class 'int'>
 float(str) # 10.0
 print(type(10.0))# <class 'float'>
 
+str1="python" 
+str1 # 'python'
+list(str1) # ['p', 'y', 't', 'h', 'o', 'n']
 bool(str) # True
 print(type(True))# <class 'bool'>
 list(str) # ['1', '0']
-# list(str).split
+
+
 str.split() # ['10']
 str1="manju"
 print(str1) # manju
@@ -79,7 +83,7 @@ b3=[(1,2),(3,4),(5,6)]
 print(b3) # [(1, 2), (3, 4), (5, 6)]
 print(type(b3)) # <class 'list'>
 dict(b3) # {1: 2, 3: 4, 5: 6}
-print(type(b3)) # <class 'list'>
+print(type(b3)) # <class 'list'> '''
 
 # 5. Converting from tuple
 t1=(1,2,3,4,5)
@@ -89,12 +93,8 @@ print(type(t1)) # <class 'tuple'>
 # float(t1) --> TypeError: 
 # complex(t1) --> TypeError: 
 bool(t1) # True
- #str(t1)#'(1, 2, 3, 4, 5)'
-''' # list(t1)
-Traceback (most recent call last):
-  File "<pyshell#58>", line 1, in <module>
-    list(t1)
-TypeError: 'list' object is not callable '''
+str(t1)#'(1, 2, 3, 4, 5)'
+list(t1) # [1, 2, 3, 4, 5]
 type(t1) # <class 'tuple'>
 
 set(t1) # {1, 2, 3, 4, 5}
@@ -115,12 +115,8 @@ print(type(s1)) # <class 'set'>
 # complex(s1) --> TypeError:
 bool(s1) # True
 
-# str(s1) # '{1, 2, 3, 4, 5}'
-''' list(s1)
-Traceback (most recent call last):
-  File "<pyshell#90>", line 1, in <module>
-    list(s1)
-TypeError: 'list' object is not callable '''
+str(s1) # '{1, 2, 3, 4, 5}'
+list(s1)# [1, 2, 3, 4, 5]
 tuple(s1) # (1, 2, 3, 4, 5)
 # dict(s1)--> TypeError:
 
@@ -134,11 +130,7 @@ print(type(d1)) # <class 'dict'>
 # complex(d1) --> TypeError:
 bool(d1) # True
 # str(d1) # '{1: 2, 3: 4, 5: 6}'
-'''list(d1)
-Traceback (most recent call last):
-  File "<pyshell#111>", line 1, in <module>
-    list(d1)
-TypeError: 'list' object is not callable '''
+list(d1)
 
 tuple(d1) # (1, 3, 5)
-set(d1) # {1, 3, 5}
+set(d1) # {1, 3, 5}'''

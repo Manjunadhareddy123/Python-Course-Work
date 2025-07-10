@@ -65,6 +65,11 @@ fruits=frozenset(["apple","banana","graphs","orange"])
 print(fruits) # frozenset({'graphs', 'orange', 'apple', 'banana'})
 print(type(fruits)) # <class 'frozenset'>
 
+# dict – Dictionary
+d1={'name':'abc','age':24,'branch':'CSE','Gender':'male'} 
+print(d1) # {'name': 'abc', 'age': 24, 'branch': 'CSE', 'Gender': 'male'}
+print(type(d1)) # <class 'dict'>
+
 
 
 

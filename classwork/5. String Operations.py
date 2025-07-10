@@ -1,10 +1,12 @@
 # 6. Introduction to Strings
 
 
-str1=("Hello World")
+str1="Hello World"
 print("str1 :",str1) # str1 : Hello World
-str2=("Python programming language")
+str2="Python programming language"
 print("str2 : ",str2) # str2 :  Python programming language
+
+
 # concatenation (+) -->  Joining two or more strings.
 print(" Concatenation (+)",str1 + str2) #  Concatenation (+) Hello WorldPython programming language
 str1='Manju'
@@ -24,8 +26,8 @@ p*3 # 'python program languagepython program languagepython program language'
 "manju"*3 #  'manjumanjumanju'
 "kowshik "*4 # 'kowshik kowshik kowshik kowshik '
 
-# Indexing --> Accessing individual characters using indices.
 
+# Indexing --> Accessing individual characters using indices.
 str1="python programming"
 print(str1) # python programming
 str1[0] # 'p'
@@ -80,6 +82,11 @@ min(names) # ' '
 min(d) # 'L'
 min('manju') # 'a'
 
+# sorted() 
+a="manjunadha"
+print(type(a)) # <class 'str'>
+print(sorted(a)) # ['a', 'a', 'a', 'd', 'h', 'j', 'm', 'n', 'n', 'u']
+
 # str1="Hello World")
 # ord --> chr() / ord() - Converts between characters and their ASCII codes.
 ord('a') # 97
@@ -93,6 +100,7 @@ chr(98) # 'b'
 chr(43) # '+'
 
 #  Complete List of Python String Methods with Examples
+
 # 1. Case Conversion Methods
 d='PythonProgrammingLanguage'
 print(d) # PythonProgrammingLanguage
