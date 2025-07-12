@@ -3,51 +3,60 @@
 
 
 # 1. Positive or Negative
-num=int(input("Enter the NUmber :"))
+num=int(input("Enter the NUmber :")) # Enter the NUmber :5
 if num>0 :
     print("Positive Number")
 elif num< 0:
     print("Negative number")
 else :
     print("Zero")
+#output: Positive Number
     
 
 # 2. Even or odd
 while True :
-    num=int(input("Enter the number :"))
+    num=int(input("Enter the number :")) # Enter the number :8
     if num%2==0 :
         print("Even number :",num)
     elif num%2==1 :
         print("Odd number :",num)
     else :
         print("Zero")
+#output :Even number : 8
 
 # 3 Divisile by 5
 while True :
-    num= int(input("Enter the number :"))
+    num= int(input("Enter the number :")) # Enter the number :15
     if num%5==0 :
         print(num,"is divisible by 5")
     else :
         print(num,"is not divisible by5")
 
+# output : 15 is divisible by 5
+
 # 4. Divisible by 3 and 7
-num=int(input("Enter the Number :"))
+num=int(input("Enter the Number :")) # Enter the Number :21
 if num % 3==0 and num % 7 ==0:
     print(num,"is divisible by both 3 and 7")
 else :
     print(num,"is nor divisible by both 3 and 7")
-        
+
+# output :21 is divisible by both 3 and 7
+
 
 # 5 leaf Year
-year=int(input("Enter the Year : "))
+year=int(input("Enter the Year : ")) # Enter the Year : 2024
 if year%400==0 or year%4==0 and year% 100!=0 :
     print(year,"It is leaf year")
 else :
     print(year,"it is not leaf year")
 
+# output :2024 It is leaf year
+    
+
 # 6. Check Pass or Fail (Passing marks = 35)
 while True :
-    num=int(input("Enter the Student marks :"))
+    num=int(input("Enter the Student marks :")) # Enter the Student marks :40
     if num>=35 and num <100 :
         print(num ," \n Pass")
     elif num>100 :
@@ -55,14 +64,30 @@ while True :
     else :
         print(num,"\n Fail")
 
+# output : 40  Pass
+
+# 7. Check if number is 3-digit
+while True :
+    num=int(input("Enter the number :")) # Enter the number :123
+    if num >=100 and num<=999 or num <=-100 and num>=-999 :
+        print(f"{num} is 3-digit number.")
+    else :
+        print(f"{num} is not 3-digit number.")
+
+# output : 123 is 3-digit number.
+
 # 8. Check if character is vowel
        
 while True :
-    char=input("Enter the Character :").upper()
+    char=input("Enter the Character :").upper() # Enter the Character :a
     if char in ['A','E','I','O','U'] :
         print(f"{char} is a vovel")
     else :
         print(f"{char} is not a vowel")
+
+# output :   A is a vovel   
+
+
 
 # 9. Check greatest of two numbers
     
@@ -148,6 +173,51 @@ while True :
     else :
         print(f"Two strings are not equal.") #output :Two strings are equal.
 
+
+# 17. Check if a number is prime (basic logic)
+num=int(input("Enter the Prime number: ")) # Enter the Prime number: 7
+if num > 1:
+    for i in range(2,num) :
+        if num % i==0 :
+            print(f"{num} is not a prime number.")
+            break
+    else :
+        print(f"{num} is a prime number.")
+
+# output : 7 is a prime number.
+
+        
+# 18. Check if number is positive and even
+
+num=int(input("Enter the number :")) #Enter the number :12
+if num>0 and num%2==0 :
+    print(f"{num} is positive and even.")
+elif num >0 and num%2==1 :
+    print("f{num} is positive and not even number.")
+else :
+    print("Check your number is Negative.")
+# output : 12 is positive and even.
+
+
+# 19. Check if character is uppercase
+str1=input("Enter the Character :") # Enter the Character :A
+if str1==str1.isupper() :
+    print(f"{str1} is uppercase character. ")
+else :
+    print(f"{str1} is not uppercase charcter.")
+
+# output : A is not uppercase charcter.
+
+
+# 20. Check if temperature is hot (>30°C)
+
+temperature =int(input("Enter the Temperature :")) # Enter the Temperature :35
+if temperature >30 :
+    print(f"{temperature}°C it's hot.")
+else :
+    print(f"{temperature}°Cit's not hot.")
+
+# output : 35°C it's hot.
 
 
 
