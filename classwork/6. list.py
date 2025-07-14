@@ -14,7 +14,8 @@ print(n) # [1, 2, 3, 4, 5]
 friuts=['apple','banana','cherry']
 print(friuts) # ['apple', 'banana', 'cherry']
 
-# 2.3 List with Nested Lists
+# 2.3 List with Nested Lists
+
 nested_list=[[1,2,3],['a','b','c'],["A","B","C"]]
 print(nested_list) # [[1, 2, 3], ['a', 'b', 'c'], ['A', 'B', 'C']]
 
@@ -26,7 +27,8 @@ print(type(l3)) # <class 'tuple'>
 list(l3) # [1, 2, 3, 4, 5]
 print(type([1, 2, 3, 4, 5])) # <class 'list'>
 
-l4=list((1,2,3,4)) # Converting tuple to list
+l4=list((1,2,3,4)) # Converting tuple to list
+
 print(l4) # [1, 2, 3, 4]
 print(type(l4)) # <class 'list'>
 
@@ -36,7 +38,8 @@ print(l5) # ['j', 'a', 'v', 'a']
 
 # 3. Accessing Elements in a List
 
-# 3.1 Using Indexing (Positive & Negative)
+# 3.1 Using Indexing (Positive & Negative)
+
 l6=["html","java","powerbi"]
 print(l6) # ['html', 'java', 'powerbi']
 print(type(l6)) # <class 'list'>

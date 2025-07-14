@@ -130,7 +130,6 @@ print(type(d1)) # <class 'dict'>
 # complex(d1) --> TypeError:
 bool(d1) # True
 # str(d1) # '{1: 2, 3: 4, 5: 6}'
-list(d1)
-
+list(d1) # [1, 3, 5]
 tuple(d1) # (1, 3, 5)
 set(d1) # {1, 3, 5}'''

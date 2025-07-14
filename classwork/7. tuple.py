@@ -13,8 +13,8 @@ print("t2",t2) # t2 ()
 print(type(t2)) # <class 'tuple'>
 
 # Single-element Tuple (note the trailing comma)
-t3=(5,)
-print('t3',t3) # t3 (5,)
+t3=(5)
+print('t3',t3) # t3 (5)
 
 # Multi-element Tuple
 t4=(1,2.3,3+4j,True,"manju",(1,2,3))

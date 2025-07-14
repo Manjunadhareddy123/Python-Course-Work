@@ -1,4 +1,4 @@
-# 6. Introduction to Strings
+ # 6. Introduction to Strings
 
 
 str1="Hello World"
@@ -313,7 +313,8 @@ m.replace('u','unadha') # 'manjunadha'
 
 #translate(table)--> Replaces characters using a translation table.
 
-pass1='manju@123' # pass1 # 'manju@123'
+pass1='manju@123'
+print(pass1)  #'manju@123'
 pass1.translate(str.maketrans("@123","#234")) # 'manju#234'
 pass1.translate(str.maketrans("manju","nadha")) # 'nadha@123'
 "pythonpp".translate(str.maketrans('pp','.p')) # 'pythonpp'
@@ -334,13 +335,14 @@ s.split('@') # [' my name is kotikrian']
 s.split('a') # [' my n', 'me is kotikri', 'n']
 "manjunadha".split('a') # ['m', 'njun', 'dh', '']
 i='manju,nadha,reddy'
-i # 'manju,nadha,reddy'
+print(i) # 'manju,nadha,reddy'
 i.split(',') # ['manju', 'nadha', 'reddy']
 
 # rsplit(sep)--> Splits from the right side.
 
 s.rsplit('a',2) # [' my n', 'me is kotikri', 'n']
-"manjunadha".rsplit('a',2) # ['manjun', 'dh', '']manjunadha".split('a',2) # ['m', 'njun', 'dha']
+"manjunadha".rsplit('a',2) # ['manjun', 'dh', '']
+"manjunadha".split('a',2) # ['m', 'njun', 'dha']
 
 # splitlines() --> Splits at line breaks (\n).
 
@@ -376,7 +378,7 @@ file.splitlines() # ['Hello', 'world', 'Python', 'programming']
 "     manju     ".strip() # 'manju'
 "  Hello world     ".strip() # 'Hello world'
 m="   python    "
-m # '   python    '
+print(m) # '   python    '
 m.strip() # 'python'
 "------manju-----".strip('-') # 'manju'
 
@@ -394,11 +396,11 @@ m.rstrip() # '   python'
 # encode(encoding) --> Converts the string tobytes.
 
 text="manjunadha"
-text # 'manjunadha'
+print(text) # 'manjunadha'
 text.encode() # b'manjunadha'
 text = "Hello नमते你好 café 🙂"
 
-text #'Hello नमते你好 café 🙂'
+print(text) #'Hello नमते你好 café 🙂'
 text.encode() # b'Hello \xe0\xa4\xa8\xe0\xa4\xae\xe0\xa4\xa4\xe0\xa5\x87\xe4\xbd\xa0\xe5\xa5\xbd caf\xc3\xa9 \xf0\x9f\x99\x82'
 
 # decode(encoding) -->  Converts bytes back tostring.
