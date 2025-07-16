@@ -49,16 +49,16 @@ Enter the  number :11
 11 is not divisible by both.'''
 
 # 4. Check if a number is negative and odd 
-while True :
-    num=int(input("Enter the number :"))  # Enter the number :-5
-    if num<0 and num%2==1 :
-        print(f"{num} is Negative and odd number.")
-    elif num <0 and num%2==0 :
-        print(f"{num} is Negative and not a odd number.")
-    elif num>0 and num%2==1 :
-        print(f"{num} is positive and odd number.")
-    else :
-        print(f"{num} is positive and no odd number.")
+
+num=int(input("Enter the number :"))  # Enter the number :-5
+if num<0 and num%2==1 :
+    print(f"{num} is Negative and odd number.")
+elif num <0 and num%2==0 :
+    print(f"{num} is Negative and not a odd number.")
+elif num>0 and num%2==1 :
+    print(f"{num} is positive and odd number.")
+else :
+    print(f"{num} is positive and no odd number.")
 
 '''
 output :
