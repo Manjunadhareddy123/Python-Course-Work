@@ -1,7 +1,8 @@
 
 # Q1)
-date,month,year=input().split('-')
+date, month, year = input().split('-')
 print(f"{year}/{month}/{date}")
+
 
 '''
 input :16-07-2025
