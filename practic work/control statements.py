@@ -46,7 +46,7 @@ for j in range(2,n+1):
         print(f"{j}:prime number.")
 '''
 Input :Enter the number :9
-Output :
+Output
 2:prime number.
 3:prime number.
 5:prime number.

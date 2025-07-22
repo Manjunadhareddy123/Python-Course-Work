@@ -153,3 +153,26 @@ for i in data1:
 li=set(map(int,input("Enter the indexes:").split(",")))
 for i in li :
     print(f"{data1[i]}-shared")
+
+'''
+Photo Gallery
+1.beach.jpg
+2.mountain.jpg
+3.party1.jpg
+4.selfile.jpg
+5.birthday.jpg
+6.concert.jpg
+7.sunset.jpg
+8.trip.jpg
+
+Input :Enter the indexes:2,2,2,1,4,5,3,8,7,6,3,4,5
+Output :
+beach.jpg-shared
+mountain.jpg-shared
+party1.jpg-shared
+selfile.jpg-shared
+birthday.jpg-shared
+concert.jpg-shared
+sunset.jpg-shared
+trip.jpg-shared
+'''
