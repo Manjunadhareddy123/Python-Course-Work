@@ -35,3 +35,20 @@ for i in range(1,num+1):
 Input :Enter the Number :21
 Output :1 3 5 7 9 11 13 15 17 19 21 
 '''
+n=int(input("Enter the number :"))
+
+for j in range(2,n+1):
+    c=0 
+    for i in range(2,j//2+1):
+        if j%i==0:
+            c+=1
+    if c==0 :
+        print(f"{j}:prime number.")
+'''
+Input :Enter the number :9
+Output :
+2:prime number.
+3:prime number.
+5:prime number.
+7:prime number.
+'''
