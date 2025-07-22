@@ -59,7 +59,7 @@ data1={
     1:{"name":"beach.jpg"},
     2:{"name":"mountain.jpg"},
     3:{"name":"party1.jpg"},
-    4:{"name":"selfile.jpg"},
+    4:{"name":"selfie.jpg"},
     5:{"name":"birthday.jpg"},
     6:{"name":"concert.jpg"},
     7:{"name":"sunset.jpg"},
@@ -83,7 +83,7 @@ Photo Gallery
 1.      beach.jpg
 2.      mountain.jpg
 3.      party1.jpg
-4.      selfile.jpg
+4.      selfie.jpg
 5.      birthday.jpg
 6.      concert.jpg
 7.      sunset.jpg
@@ -96,7 +96,7 @@ beach.jpg
 mountain.jpg
 party1.jpg
 party1.jpg
-selfile.jpg
+selfie.jpg
 birthday.jpg
 concert.jpg
 sunset.jpg
@@ -137,3 +137,19 @@ Output :
 Thank You
 230
 '''
+print("Photo Gallery")
+data1={
+    1:"beach.jpg",
+    2:"mountain.jpg",
+    3:"party1.jpg",
+    4:"selfile.jpg",
+    5:"birthday.jpg",
+    6:"concert.jpg",
+    7:"sunset.jpg",
+    8:"trip.jpg"
+}
+for i in data1:
+    print(f"{i}.{data1[i]}")
+li=set(map(int,input("Enter the indexes:").split(",")))
+for i in li :
+    print(f"{data1[i]}-shared")
