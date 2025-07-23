@@ -153,6 +153,66 @@ Output :
 * * * * * * *
 '''
 
+# Diamond Pattern
+n=int(input("Enter the size :"))
+for row in range(n) :
+    print(" "*(n-row-1)+'* '*(row+1))
+for row in range(n-2,-1,-1) :
+    print(" "*(n-row-1)+'* '*(row+1))
+print()
+
+'''
+Input :Enter the size :5
+Output :
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * *
+   * *
+    *
+
+'''
+# 6. Number Triangle
+
+n=int(input("Enter the size :"))
+for row in range(n) :
+    for col in range(row+1):
+        print(col,end=" ")
+    print()
+
+'''
+Input :Enter the size :5
+Output :
+0 
+0 1
+0 1 2
+0 1 2 3
+0 1 2 3 4
+'''
+
+
+# 7. Floyd’s Triangle
+
+n=int(input("Enter the size :"))
+num=1
+for row in range(1,n+1) :
+    for col in range(row):
+        print(num,end=" ")
+        num+=1
+    print()
+'''
+Input :Enter the size :5
+Output :
+1 
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+'''
+
 # A
 n=int(input("Enter the Size :"))
 for row in range(n):

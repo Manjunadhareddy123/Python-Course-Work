@@ -1,5 +1,110 @@
 # Control Statements
 
+
+# FOR LOOP
+work=[1,1,1,0,1,1,0]
+current=0
+longer=0
+for day in work :
+    if day==1 :
+        current +=1
+        if current > longer :
+            longer=current
+    else :
+        current=0
+print("longest_streak",longer) 
+
+'''
+longest_streak 3
+'''
+
+# WHILE LOOP
+current="12345"
+attempts=0
+max_attempts=3
+while attempts < max_attempts :
+    enter_attempts=input("Enter the PIN : ")
+    if enter_attempts == current :
+        print("Login Successful.")
+        break
+    else :
+        print("Sorry ,Try another Time.")
+        attempts +=1
+else :
+    print("Your Attempts are finished,try for some time aftetr.")
+
+'''
+Enter the PIN : 1111
+Sorry ,Try another Time.
+Enter the PIN : 11111
+Sorry ,Try another Time.
+Enter the PIN : 12345
+Login Successful.
+'''
+
+
+
+# FOR LOOP WITH ELSE
+notifications=[0,0,0,0]
+for notification in notifications :
+    if notification==1:
+        print("You have unread notifications!.")
+        break
+else :
+    print("All caught up!.")
+'''
+All caught up!.
+'''
+
+
+# WHILE LOOP WITH ELSE
+correct_opt="1231"
+current_attempts=0
+max_attempts=3
+while current_attempts < max_attempts :
+    enter_attempt=input("Enter the Opt :")
+    if enter_attempt == correct_opt :
+        print("Opt successfully.")
+        break
+    else :
+        print("Opt is incorrect.")
+        current_attempts +=1
+else :
+    print("OTP expired.Request a new one.")
+
+'''
+ra22.py                                                                                        Enter the Opt :1233
+Opt is incorrect.
+Enter the Opt :12
+Opt is incorrect.
+Enter the Opt :1231
+Opt successfully.
+'''
+
+
+# break Statement in Python
+numbers=[1,2,3,4,5,6,7,8]
+target=7
+for num in numbers :
+    if num == target :
+        print("Target found : ",num)
+        break
+
+'''
+Target found :  7
+'''
+
+
+# continue Statement in Python
+for num in range(1,10) :
+    if num % 2==0 :
+        continue
+    print(num,end=" ")
+
+'''
+1 3 5 7 9 
+'''
+
 # Table numbers.
 num=int(input("Enter the table number :"))# Enter the table number :17
 for i in range(1,21):
