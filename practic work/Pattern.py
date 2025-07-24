@@ -502,6 +502,31 @@ Output :
                         *
 * * * * * * * * * * * * *
 '''
+# W
+n=int(input("Enter the size :"))
+for row in range(n):
+    for col in range(n):
+        if col==0 or  col==n-1:
+            print("*",end=" ")
+        elif col==row and row>n//2-1:
+            print("*",end=" ")
+        elif col+row==n-1 and row>n//2:
+            print("*",end=" ") 
+        else :
+            print(" ",end=" ")
+            
+    print( )
+'''
+Input :Enter the size :7
+Output :
+*           * 
+*           *
+*           *
+*     *     *
+*   *   *   *
+* *       * *
+*           *
+'''
 # X
 n=int(input("Enter the size(X) :"))
 for row in range(n):
@@ -548,6 +573,29 @@ Output:
     *         *
   *             *
 *                 *
+'''
+# Y
+n=int(input("Enter the size :"))
+for row in range(n):
+    for col in range(n-1):
+        if row-col==0 and row<n//2:
+            print("*",end=" ")
+        elif row+col==n-2 and row<n//2 :
+            print("*",end=" ")
+        elif col==n//2-1  and row>n//2-1:
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
+'''
+Input :Enter the size :6
+OUtput :
+*       *
+  *   *
+    *
+    *
+    *
+    *
 '''
 # Z
 n=int(input("Enter the size(Z) :"))
