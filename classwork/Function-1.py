@@ -1,6 +1,6 @@
 #Function Arguments
 # 1. Positional Arguments
-"""
+
 data=('xyz@gmail.com','xyz@123')
 def login (username,mail,password):
     if mail==data[0] and password==data[1] :
@@ -87,7 +87,7 @@ Enter the Password :xyz@123
 xyz -Login Successful.
 
 '''
-"""
+
 # 4. Variable-Length Arguments
 # *args (Arbitrary Positional Arguments)
 # Used to pass a variable number of arguments.
