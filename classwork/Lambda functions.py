@@ -166,3 +166,172 @@ print(s)
 '''
 ['reddy', 'laddu', 'nadha', 'kowshik', 'manju']
 '''
+# List Indexing
+l=[[23,34,23],[12,23,34],[34,45,63],[34,32,13],[34,45,67]]
+print(sorted(l))
+'''
+output : [[12, 23, 34], [23, 34, 23], [34, 32, 13], [34, 45, 63], [34, 45, 67]]
+'''
+
+l=[[23,34,23],[12,23,34],[34,45,63],[34,32,13],[34,45,67]]
+s=sorted(l,key=lambda i:i[-1])
+print(s)
+'''
+Output :[[34, 32, 13], [23, 34, 23], [12, 23, 34], [34, 45, 63], [34, 45, 67]]
+'''
+# list in even numbers
+l=[1,2,3,4,5,6,7,8,9,10]
+e=list(filter(lambda i:i%2==0,l))
+print(e)
+'''
+Output : [2, 4, 6, 8, 10]
+'''
+# list in odd numbers
+l=[1,2,3,4,5,6,7,8,9,10]
+e=list(filter(lambda i:i%2==1,l))
+print(e)
+'''
+Output : [1, 3, 5, 7, 9]
+'''
+# filer using remove "0"
+l=[1,2,0,0,4,7,5,0,0,0,3,2,4,2]
+e=list(filter(lambda i:i!=0,l))
+print(e)
+'''
+Output : [1, 2, 4, 7, 5, 3, 2, 4, 2]
+'''
+
+data={
+    'laptopA':{'available':True,'price':40000},
+    'laptopB':{'available':False,'price':35700},
+    'laptopC':{'available':True,'price':45000},
+    'laptopD':{'available':False,'price':60000},
+    'laptopE':{'available':True,'price':80000},
+    'laptopF':{'available':False,'price':70000},
+    'laptopG':{'available':True,'price':50000},    
+    'laptopH':{'available':False,'price':42000}
+}
+
+l=list(map(lambda i:i,data))
+print(l)
+'''
+Output : ['laptopA', 'laptopB', 'laptopC', 'laptopD', 'laptopE', 'laptopF', 'laptopG', 'laptopH']
+
+'''
+
+data={
+    'laptopA':{'available':True,'price':40000},
+    'laptopB':{'available':False,'price':35700},
+    'laptopC':{'available':True,'price':45000},
+    'laptopD':{'available':False,'price':60000},
+    'laptopE':{'available':True,'price':80000},
+    'laptopF':{'available':False,'price':70000},
+    'laptopG':{'available':True,'price':50000},    
+    'laptopH':{'available':False,'price':42000}
+}
+
+l=list(map(lambda i:data[i],data))
+print(l)
+'''
+Output :
+[{'available': True, 'price': 40000}, {'available': False, 'price': 35700}, {'available': True, 'price': 45000}, {'available': False, 'price': 60000}, {'available': True, 'price': 80000}, {'available':
+ False, 'price': 70000}, {'available': True, 'price': 50000}, {'available': False, 'price': 42000}]                                                                                                      
+'''
+
+# staus of labtops
+data={
+    'laptopA':{'available':True,'price':40000},
+    'laptopB':{'available':False,'price':35700},
+    'laptopC':{'available':True,'price':45000},
+    'laptopD':{'available':False,'price':60000},
+    'laptopE':{'available':True,'price':80000},
+    'laptopF':{'available':False,'price':70000},
+    'laptopG':{'available':True,'price':50000},    
+    'laptopH':{'available':False,'price':42000}
+}
+
+l=list(map(lambda i:data[i]['available'],data))
+print(l)
+'''
+Output : [True, False, True, False, True, False, True, False]
+
+'''
+# available Laptops
+data={
+    'laptopA':{'available':True,'price':40000},
+    'laptopB':{'available':False,'price':35700},
+    'laptopC':{'available':True,'price':45000},
+    'laptopD':{'available':False,'price':60000},
+    'laptopE':{'available':True,'price':80000},
+    'laptopF':{'available':False,'price':70000},
+    'laptopG':{'available':True,'price':50000},    
+    'laptopH':{'available':False,'price':42000}
+}
+
+l=list(filter(lambda i:data[i]['available'],data))
+print(l)
+'''
+Output : ['laptopA', 'laptopC', 'laptopE', 'laptopG']
+
+'''
+# Price below 50K 
+data={
+    'laptopA':{'available':True,'price':40000},
+    'laptopB':{'available':False,'price':35700},
+    'laptopC':{'available':True,'price':45000},
+    'laptopD':{'available':False,'price':60000},
+    'laptopE':{'available':True,'price':80000},
+    'laptopF':{'available':False,'price':70000},
+    'laptopG':{'available':True,'price':50000},    
+    'laptopH':{'available':False,'price':42000}
+}
+
+l=list(filter(lambda i:data[i]['price']<50000,data))
+print(l)
+'''
+Output :['laptopA', 'laptopB', 'laptopC', 'laptopH']
+'''
+
+# based on color balck
+data={
+    'laptopA':{'available':True,'price':40000,'color':'Green'},
+    'laptopB':{'available':False,'price':35700,'color':'Black'},
+    'laptopC':{'available':True,'price':45000,'color':'White'},
+    'laptopD':{'available':False,'price':60000,'color':'Black'},
+    'laptopE':{'available':True,'price':80000,'color':'Green'},
+    'laptopF':{'available':False,'price':70000,'color':'Black'},
+    'laptopG':{'available':True,'price':50000,'color':'Green'},    
+    'laptopH':{'available':False,'price':42000,'color':'Black'}
+}
+
+l=list(filter(lambda i:data[i]['color']=='Black',data))
+print(l)
+'''
+Output : ['laptopB', 'laptopD', 'laptopF', 'laptopH']
+'''
+
+# filter using even numbers
+
+v=[1,2,3,4,5,6,7,8,9,10]
+e=list(filter(lambda i:i%2==0,v))
+print(e)
+'''
+Output : [2, 4, 6, 8, 10]
+
+'''
+# uppercase
+v=['manju','nadha','reddy','kowshik']
+s=list(map(lambda i :i.upper(),v))
+print(s)
+'''
+Output: ['MANJU', 'NADHA', 'REDDY', 'KOWSHIK']
+'''
+
+# Title()
+v=['manju','nadha','reddy','kowshik']
+s=list(map(lambda i :i.title(),v))
+print(s)
+'''
+Output :['Manju', 'Nadha', 'Reddy', 'Kowshik']
+
+'''
