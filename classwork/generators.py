@@ -1,3 +1,4 @@
+''''''
 def show_feed(l):
     return l
 reels=['1..100','101..200','201..300','301..400','401..500']
@@ -66,17 +67,13 @@ reels=['1..100','101..200','201..300','301..400','401..500']
 nextfeed=show_feed(reels)
 
 while True :
-    scroll=input("[c]otinue / [e]xit :")
+    scroll=input("[c]otinue / [e]xit.......... :")
     if scroll=='c':
         print(next(nextfeed))
     else :
         break
 
-print(next(nextfeed))
-print(next(nextfeed))
-print(next(nextfeed))
-print(next(nextfeed))
-print(next(nextfeed))
+
 
 
 
