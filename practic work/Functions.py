@@ -129,3 +129,149 @@ Enter list Elements :1 2 3
 Cleared list: []
 
 '''
+# functions
+
+# 13. Update Dictionary Value
+def update_dict_value(d, key, new_value):
+    d[key] = new_value
+    return d
+dict_input = input("Enter dictionary: ")
+key = input("Enter key to update: ")  
+value = input("Enter new value: ") 
+
+d = eval(dict_input)
+
+if value.isdigit():
+    value = int(value)
+
+updated_dict = update_dict_value(d, key, value)
+
+print("Updated dictionary:", updated_dict)
+'''
+Input :
+Enter dictionary: {'a':1}
+Enter key to update: a
+Enter new value: 2
+
+Output :
+Updated dictionary: {'a': 2}
+'''
+
+
+# 14. Remove Element from List by Value
+def remove_element(lst, value):
+    if value in lst:
+        lst.remove(value)
+    return lst
+input_list = input("Enter list elements: ")   
+element_to_remove = input("Enter element to remove: ") 
+
+lst = list(map(int, input_list.split()))
+value = int(element_to_remove)
+
+updated_list = remove_element(lst, value)
+print("Updated list:", updated_list)
+
+'''
+Input :
+Enter list elements: 1 2 3 4
+Enter element to remove: 3
+
+Output :
+Updated list: [1, 2, 4]
+'''
+
+# 15. Add Key to Dictionary
+def add_key(d,key,value):
+    d[key]=value
+    return d
+
+dict_input=input("Enter the dict :")
+new_key=input("Enter the new key :")
+new_value=input("Enter the new value :")
+
+d=eval(dict_input)
+
+if new_value.isdigit():
+    new_value=int(new_value)
+update=add_key(d,new_key,new_value)
+
+print("Updated dicionary :",update)
+'''
+Input :
+Enter the dict :{'x':10}
+Enter the new key :y
+Enter the new value :20
+
+Output :
+Updated dicionary : {'x': 10, 'y': 20}
+
+'''
+
+# 16. Increment All Values in Dictionary
+def increment_values(d):
+    for key in d:
+        d[key]+=1
+    return d
+dict_input=input("Enter Dicionary :")
+d=eval(dict_input)
+update1=increment_values(d)
+print("Updated dictionary :",update1)
+'''
+Input : Enter Dicionary :{'a':1,'b':2}
+Output : Updated dictionary : {'a': 2, 'b': 3}
+'''
+
+# 17. Factorial of a Number
+def fact(n):
+    result=1
+    for i in range(1,n+1):
+        result*=i
+    return result
+num=int(input("Enter the number :"))
+a=fact(num)
+print(a)
+'''
+Input : Enter the number :5
+Output :120
+'''
+
+# 18. Fibonacci Number (Nth Term)
+def fibonacci(n):
+    a,b=0,1
+    for _ in range(n):
+        a,b=b,a+b
+    return a
+
+term=int(input("Enter the Fibonacci number :"))
+fib_number=fibonacci(term)
+
+print("Fibonacci numberis :",fib_number)
+'''
+Input : Enter the Fibonacci number :6
+Output : Fibonacci numberis : 8
+'''
+# 19. Sum of First N Natural Numbers
+def sum_natural(n):
+    return n*(n+1)//2
+num=int(input("Enter a number :"))
+total=sum_natural(num)
+print("Sum of natural numbers :",total)
+'''
+Input : Enter a number :10
+Output : Sum of natural numbers : 55
+'''
+#20. Reverse a String Using Recursion
+
+def reverse_string(s):
+    if len(s)==0:
+        return s
+    return reverse_string(s[1:])+s[0]
+text=input("Enter the string :")
+reverse_text=reverse_string(text)
+
+print("Reversed string is :",reverse_text)
+'''
+Input : Enter the string :hello
+Output : Reversed string is : olleh
+'''
