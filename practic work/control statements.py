@@ -52,3 +52,38 @@ Output
 5:prime number.
 7:prime number.
 '''
+
+# 5. Find Factorial of a Number (Using for loop)
+num=int(input("Enter the Number :"))
+if num>0:
+    result=1
+    for i in range(1,num+1):
+        result *=i
+    print(result)
+
+'''
+Input : Enter the Number :5
+Output : 120
+'''
+
+# 6. Print Multiplication Table of N (Using for loop)
+num=int(input("Enter the numbher :"))
+table_number=int(input("Enter the number :"))
+for i in range(1,num+1):
+    print(table_number,"*",i,"=",table_number*i)
+
+'''
+Enter the numbher :10
+Enter the number :12
+12 * 1 = 12
+12 * 2 = 24
+12 * 3 = 36
+12 * 4 = 48
+12 * 5 = 60
+12 * 6 = 72
+12 * 7 = 84
+12 * 8 = 96
+12 * 9 = 108
+12 * 10 = 120
+'''
+
