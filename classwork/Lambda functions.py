@@ -166,6 +166,16 @@ print(s)
 '''
 ['reddy', 'laddu', 'nadha', 'kowshik', 'manju']
 '''
+
+n=int(input("Enter the number :"))
+evenorodd=lambda n: True if n%2==0 else False
+print(evenorodd(n))
+'''
+Enter the number :55
+False
+Enter the number :20
+True
+'''
 # List Indexing
 l=[[23,34,23],[12,23,34],[34,45,63],[34,32,13],[34,45,67]]
 print(sorted(l))

@@ -102,3 +102,6 @@ print(list(map(lambda i : i.lower(),l)))
 '''
 ['manju', 'kowshik', 'laddu']
 '''
+
+
+
