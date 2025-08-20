@@ -376,3 +376,37 @@ Input :Enter the Number :12341234
 Output :20
 
 '''
+
+
+# recursion
+
+# Factorial number
+def factorial(n):
+    if n==0 or n==1 :
+        return 1
+    else :
+        return n*factorial(n-1)
+print(factorial(4))
+'''
+24
+'''
+# Fibonacci Series.
+def fibonacci(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else :
+        return fibonacci(n-1)+fibonacci(n-2)
+print(fibonacci(6))
+
+# Sum of Natural Numbers
+def sumofnum(n):
+    if n==1:
+        return 1
+    else :
+        return n+sumofnum(n-1)
+print(sumofnum(10))
+'''
+55
+'''
