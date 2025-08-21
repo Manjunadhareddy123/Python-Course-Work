@@ -102,6 +102,11 @@ print(list(map(lambda i : i.lower(),l)))
 '''
 ['manju', 'kowshik', 'laddu']
 '''
-
-
-
+# 10. Return length of a string using lambda
+length=lambda s :len(s)
+print(length("HELLO"))
+print(length("python"))
+'''
+5
+6
+'''
