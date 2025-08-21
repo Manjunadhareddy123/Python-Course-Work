@@ -30,32 +30,6 @@ Enter a number :3
 You can't add 2 diff types
 '''
 
-try:
-    a=10
-    a=a+10
-    l=[1,2,3]
-    k=l[2]
-    d={1:2,2:4,3:9}
-    print(d[2])
-    b=int(input("Enter a number :"))
-    print(b)
-    c=1+"1"
-
-except NameError :
-    print("a is not define")
-except IndexError :
-    print("You have entered the put of range value")
-
-except KeyError :
-    print("Key is not present")
-
-except ValueError :
-    print("Enter the proper data type")
-
-except TypeError :
-    print("You can't add 2 diff types")
-
-
 # NameError
 try:
     a=a+10
